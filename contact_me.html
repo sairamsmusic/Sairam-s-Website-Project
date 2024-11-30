@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd"><!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale-1.0">
+		 <title>Contact Me</title>
+		 <link rel="stylesheet" href="style.css">
+		 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+		 
+		 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		 <script type="text/javascript">
+			(function() {
+            emailjs.init('q9_e8gTupSoT8dtZi');
+			})();
+		 </script>
+		 <script type="text/javascript">
+			window.onload = function() {
+				document.getElementById('contact-form').addEventListener('submit', function(event) {
+					event.preventDefault();
+					// these IDs from the previous steps
+					emailjs.sendForm('service_j42w0ca', 'contact_form', this)
+						.then(function() {
+							console.log('SUCCESS!', window.location.href='thank-you.html');
+						}, function(error) {
+							console.log('FAILED...', error);
+						});
+				});
+			}
+         </script>
+	
+	</head>
+	<body>
+	<section id="banner">
+		<img src="images/logo.png" class = "logo">
+		<br>
+		<br>
+		<br>
+		<div id="contact_me">
+			<div class="container">
+				<h1> Contact Me </h1>
+				<p>Feel free to get in touch with Sairam and ask him anything or leave a comment<p>
+				<div class="contact-box">
+					<div class="contact-left">
+						<h3>*Please let me know your comments and suggestions*<h3>
+						
+						<form id="contact-form" method="post" >
+							
+							<label>Name (First and Last Name)*</label>
+							<input name="from_name" type="text" id="name" placeholder="Name (First and Last)" required>
+							
+							<label>E-Mail*</label>
+							<input name="email" type="email" id="email" placeholder="Email" required>
+								 
+							<label>City and State of Where You Are From (e.g. City, State) *</label>
+							<input name="hometown" type="text" id="hometown" placeholder="(City, State)" required>
+							
+							<label>Gender *</label>
+									
+							<select name="gender" id="gender">
+								<option value="Male">Male</option>
+								<option value="Female">Female</option>
+								<option value="Other">Other</option>
+								<option value="Prefer Not To Disclose">Prefer Not To Disclose</option>
+							</select>
+								
+							<label>Comment*</label>
+							<textarea name="message" id="message" rows="5" placeholder="Comment"></textarea>
+							</div>
+							</div>
+							<a href="thank-you.html">
+							<button type="submit">Submit</button></a>
+							
+						</form>
+					</div>
+					
+			
+		</div>    
+	</section>
+	
+	<div id="sideNav">
+		<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="music.html">Music</a></li>
+			<li><a href="updates.html">Updates</a></li>
+			<li><a href="contact_me.html">Contact Me</a></li>
+		</ul>
+		</nav>
+	</div>
+	
+</body>
+</html>

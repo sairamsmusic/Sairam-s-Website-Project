@@ -1,0 +1,531 @@
+*{
+	margin: 0;
+	padding: 0;
+ }
+ #banner{
+	background: linear-gradient(rgba(0,0,0,0.5),#009688), url(images/banner.jpg);
+	width: 100vw;
+	height: 160vh; 
+	background-size: 100% 230%;
+	background-repeat: no-repeat;
+	position: relative;
+	background-position: center;
+ }
+ .logo{
+	width: 140px;
+	position: absolute;
+	top: 4%;
+	left: 10%;
+ }
+ .banner-text{
+	text-align: center;
+	color: #FFD700;
+	padding-top: 180px;
+ }
+ .banner-text h1{
+	font-size: 130px;
+	font-family: 'Dancing Script', cursive;
+ }
+ 
+ .banner-text p{
+	font-size: 20px;
+	font-style: italic;
+	font-family: 'Dancing Script', cursive;
+ }
+ .banner-btn{
+	margin: 70px auto 0;
+ }
+ .banner-btn a{
+	width: 150px;
+	text-decoration: none;
+	display: inline-block;
+	margin: 0 10px;
+	padding: 12px 0;
+	color: #FFD700;
+	
+	border: .5px solid #fff;
+	position: relative;
+	z-index: 1;
+	transition: 0.5s;
+ }
+ .banner-btn a span{
+	width: 50%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+	z-index: -1;
+	transition: 0.5s;
+ }
+  .banner-btn a:hover span{
+	  width: 100%;
+	  background: #fff;
+  }
+  .banner-btn a:hover{
+	  color: #000;
+  }
+  
+  #sideNav{
+	font-size: 22px;
+	font-family: 'Dancing Script', cursive;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+    position: absolute;
+    top: 0;
+	background: #009688;
+	z-index: 2;
+	display: flex;
+    justify-content: space-around;
+  }
+  nav ul li{
+	display: inline-block;
+    list-style-type: none;
+	  
+  }
+  nav ul li a{
+	  padding: 12px;
+	  text-decoration: none;
+	  color: #FFD700;
+	  
+  }
+
+  nav ul li a:hover{
+	color: white;
+  }
+  
+  /*--disclaimer--*/
+  
+  #disclaimer{
+	  width: 100%;
+	  color: #8B0000;
+	  background: #009688;
+	  text-align: center;
+	  font-family: 'Dancing Script', cursive;
+	  
+  }
+  title-text h1, h3{
+	  font-family: 'Dancing Script', cursive;
+	  color: #8B0000;
+	  text-align: center;
+	  padding-bottom: 30px;
+  }
+  
+  /*--------------about------------------------*/
+  #about{
+	  padding: 80 px 0;
+	  color: #FFD700;
+	  font-family: 'Dancing Script', cursive;
+	  background: #009688;
+  }
+  .row{
+	  display: flex;
+	  justify-content: space-betweeen;
+	  flex-wrap: wrap;
+  }
+
+  .about-col-1{
+	  flex-basis: 35%;
+  }
+  .about-col-1 img {
+    width: 95%;
+    margin-top: 200px;
+    margin-left: -12px;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+  .about-col-2{
+	  flex-basis: 60%;
+  }
+  .about-col-2 p{
+	  font-family: 'Didact Gothic';
+  }
+  .sub-title h1{
+	  font-size: 60px;
+	  font-width: 600;
+	  color: #FFD700;
+  }
+  
+  /*---------------contact me------------------*/
+  #contact_me{
+	  margin: 50px auto;
+	  padding: 80 px 0;
+	  color: #FFD700;
+	  box-sizing: border-box;
+  }
+  .container{
+	  width: 1000%;
+	  height: 100vh;
+	  align-items: center;
+	  justify-content: center;
+  }
+  .contact-box{
+	  background: #009688;
+	  display: flex;
+  }
+  .contact-left{
+	  flex-basis: 60%;
+	  padding: 50px 50px;
+  }
+  h1{
+	 margin-bottom: 10px;
+	 font-family: 'Dancing Script', cursive;
+  }
+  
+  .container p{
+	   margin-bottom: 40px;
+	   font-family: 'Dancing Script', cursive;
+  }
+  form{
+	  
+	  display: flex;
+	  flex-direction: column;
+	  padding: 2vw 4vw;
+	  width: 90%;
+	  max-width: 600px;
+	  border-radius: 10px;
+	  color: #FFD700;
+  }
+  form h3{
+	 font-weight: 800;
+	 margin-bottom: 20px;
+	 
+  }
+  form input, form textarea{
+	  border: 0;
+	  margin: 10px, 0;
+	  padding: 20px;
+	  outline: none;
+  }
+  input{
+	  width: 100%;
+	  border: none;
+	  border-bottom: 1px solid #ccc;
+	  outline: none;
+	  padding-bottom: 5px;
+  }
+  textarea{
+	 
+	  width: 100%;
+	  border: 1px solid #ccc;
+	  outline: none;
+	  padding: 10 px;
+	  box-sizing: border-box;
+  }
+  label{
+	  margin-bottom: 6px;
+	  display: block;
+  }
+  
+  .contact-left h3{
+	  color: red;
+	  font-weight: 600;
+	  margin-bottom: auto;
+  }
+  button{
+	  background: black;
+	  width: 100px;
+	  border: none;
+	  outline: none;
+	  color: #fff;
+	  height: 35px;
+	  border-radius: 30px;
+	  margin-top: -80px;
+	  margin-left: 100px;
+	  cursor: pointer;
+	  box-shadow: 0px 5px 15 0px rgba(28,0,181,0.3);
+  }  
+ 
+
+		
+  #banner2{
+	background: linear-gradient(rgba(0,0,0,0.5),#009688), url(images/banner2.jpg);
+	color: #FFD700;
+	width: 100vw;
+	height: 850vh; 
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	background-position: center;
+	
+ }
+.logo2{
+	width: 140px;
+	position: absolute;
+	top: 1%;
+	left: 10%;
+ }
+ 
+ ----------------------------music------------------------------------
+ #music{
+	 padding: 80 px 0;
+	 color: #FFD700;
+ }
+ 
+ .container{
+	 width: 80%;
+	 margin: 50px auto;
+	 font-family: 'Playpen Sans';
+ }
+ .container h2{
+	 color: tan;
+ }
+ 
+ ------------thank you page---------------------
+ #thank-you{
+	 padding: 80 px 0;
+	 font-family: 'Dancing Script', cursive;
+	 background: #009688;
+ }
+  .thank-you h1{
+	 text-align: center;
+	 color: #FFD700;
+	 
+ }
+ .thank-you p{
+	 text-align: center;
+	 font-family: 'Dancing Script', cursive;
+	 color: #FFD700;
+	 font-size: 20px;
+ }
+ 
+ .thank-you a{
+	 color: #FFD700;
+	 font-family: 'Dancing Script', cursive;
+	 font-size: 20px;
+ }
+ 
+ --------------------updates blog---------------------------------
+ .blog{
+	 border: 20px solid #FFD700;
+	 margin-bottom: 20 px;
+ }
+ 
+ .secondlogo
+ {
+	 display: block;
+	 margin-left: auto;
+	 margin-right: auto;
+	 width: 50%;
+	
+ }
+ 
+.date
+ {
+	font-family: 'Dancing Script', cursive;
+	text-align: center;
+	color: #FFD700;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	font-weight: 700;
+ }
+ 
+ .blog h2{
+	 border-top: 2px solid #FFD700;
+	 border-left: 2px solid #FFD700;
+	 border-right: 2px solid #FFD700;
+	 font-family: 'Dancing Script', cursive;
+	 text-align: center;
+	 font-size: 2.0rem;
+	 color: #00000;
+ }
+ .blog h1{
+	 font-family: 'Dancing Script', cursive;
+	 text-align: center;
+	 font-size: 2.0rem;
+	 color: #FFD700;
+ }
+ .blog hr{
+	 border: 0;
+	 height: 0;
+	 
+	 border-bottom: 2px solid #FFD700;
+ }
+ .blog p{
+	 font-family: 'Source Sans 3';
+	 text-align: center;
+	 color: #FFD700;
+	 font-weight: 600;
+	 border-left: 2px solid #FFD700;
+	 border-right: 2px solid #FFD700;
+	 padding-left: 5px;
+ }
+ 
+ @media screen and (max-width: 1100px )
+ {
+	#sideNav{
+		text-align: center;
+		font-size: 35px;
+		font-family: 'Dancing Script', cursive;
+		padding-bottom: 1px;
+	}
+
+	nav ul li  a:not(:first-child) {display: none;}
+	nav ul li a.icon {
+		float: right;
+		display: block;
+	}
+
+	nav ul li a:hover{
+		color: white;
+	}
+	#banner {
+			background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(images/banner_for_mobile_device.jpg);
+			background-position: center;
+			background-size: cover; /* Ensures the background image covers the whole container */
+			height: 230vh; /* Set the height to 100% of the viewport height */
+			width: 100%; /* Set the width to 100% of the viewport width */
+	}
+	
+	.logo{
+		top: 1%;
+		}
+	#banner2{
+		height: 5060px;
+		background-size: cover;
+		width: auto;
+		
+	}
+	
+	.logo2{
+		top: 1%;
+		}
+	
+	.banner-text{
+		text-align: center;
+		color: #FFD700;
+		padding-top: 180px;
+		line-height: 30px;
+	}
+	.banner-text h1{
+		font-size: 36px;
+		font-family: 'Dancing Script', cursive;
+	}
+	
+	.banner-text p{
+		font-size: 10px;
+		font-style: italic;
+		font-family: 'Dancing Script', cursive;
+	}
+
+	.banner-text p.quote{
+		font-size: 27px;
+	}
+	.about-col-2 p{
+			font-size: 25px;
+			font-family: 'Didact Gothic';
+	}
+	.about-col-1 img {
+		width: 95%;
+		margin-left: -12px;
+		border-radius: 15px;
+		margin: 0 auto; /* Center the image */
+	}
+	.blog h2{
+		border-top: 2px solid #FFD700;
+		border-left: 2px solid #FFD700;
+		border-right: 2px solid #FFD700;
+		font-family: 'Dancing Script', cursive;
+		text-align: center;
+		font-size: 2.0rem;
+		color: #00000;
+		
+	}
+
+	.blog p
+	{
+		font-size: 26px;
+	}
+}
+ 
+ @media screen and (max-width: 600px) or (max-height: 1000px)
+ {
+	
+		#sideNav{
+	   text-align: center;
+	   font-size: 17px;
+	   font-family: 'Dancing Script', cursive;
+	   padding-bottom: 1px; }
+	   
+				
+   
+	 nav ul li  a:not(:first-child) {display: none;}
+	 nav ul li a.icon {
+	   float: right;
+	   display: block;
+	 }
+   
+	 nav ul li a:hover{
+	   color: white;
+	 }
+   
+   
+	 #banner{
+		 background: linear-gradient(rgba(0, 0, 0, 0.5), #009688), url(images/banner_for_mobile_device.jpg);
+		   background-position: center;
+		   background-size: cover; /* Ensures the background image covers the whole container */
+		   height: 100vh; /* Set the height to 100% of the viewport height */
+		   width: 100%; /* Set the width to 100% of the viewport width */
+	 }
+	 .logo{
+	   top: 1%;
+	   }
+	 #banner2{
+		 height: 5060px;
+		 background-size: cover;
+		 width: auto;
+		 
+	 }
+	 
+	 .logo2{
+	   top: 1%;
+	   }
+	
+	.banner-text{
+	   text-align: center;
+	   color: #FFD700;
+	   padding-top: 180px;
+	   line-height: 30px;
+	   font-size: 24px;
+	}
+	.banner-text h1{
+	   font-size: 46px;
+	   font-family: 'Dancing Script', cursive;
+	}
+	
+	.banner-text p{
+	   font-size: 26px;
+	   font-style: italic;
+	   font-family: 'Dancing Script', cursive;
+	}
+   
+	
+	.about-col-2 p{
+			   font-size: 10px;
+			 font-family: 'Playpen Sans';
+	 }
+	 .about-col-1 img {
+	   width: 95%;
+	   margin-left: -12px;
+	   border-radius: 15px;
+	   margin: 0 auto; /* Center the image */
+	 }
+	.blog h2{
+		border-top: 2px solid #FFD700;
+		border-left: 2px solid #FFD700;
+		border-right: 2px solid #FFD700;
+		font-family: 'Dancing Script', cursive;
+		text-align: center;
+		font-size: 2.0rem;
+		color: #00000;
+		
+	}
+}
+
+ 
+ 
+
+ 
+ 
+ 
